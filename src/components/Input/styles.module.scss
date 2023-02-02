@@ -1,0 +1,32 @@
+.inputGroup {
+  width: 100%;
+  position: relative;
+
+  .input {
+    padding-left: 21px;
+    height: 64px;
+    width: 100%;
+    outline: none;
+    border-radius: 40px;
+    border: none;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+
+  .button {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    border: none;
+    top: 0;
+    transform: translateX(2px);
+    background-color: #F2726C;
+    color: white;
+    width: auto;
+    margin: 8px 0;
+    margin-right: -10px;
+    padding: 15px 32px;
+  }
+}
+

@@ -1,0 +1,29 @@
+.teamContainer {
+  width: 100%;
+  margin-top: 192px;
+
+  .teamGreeting {
+    margin: 0 auto;
+    width: 352px;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 16px;
+    }
+  }
+
+  .teamImages {
+    display: flex;
+    justify-content: space-around;
+    width: 1120px;
+    margin: 0 auto;
+
+    .img1 .img3 {
+      margin-top: 13px;
+    }
+
+    .img2 {
+      margin-top: 117px;
+    }
+  }
+}

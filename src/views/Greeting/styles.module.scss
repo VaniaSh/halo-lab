@@ -1,0 +1,21 @@
+.greetingContainer{
+  background-color: #F7F3F4;
+  width: 100%;
+  height: 1000px;
+  .images{
+    display: flex;
+    padding-left: 160px;
+    padding-top: 128px;
+    gap: 113px;
+    align-items: center;
+    .textImg{
+      margin-bottom: 59px;
+    }
+    .underImgContent{
+      width: 448px;
+      p{
+        margin-bottom: 48px;
+      }
+    }
+  }
+}
