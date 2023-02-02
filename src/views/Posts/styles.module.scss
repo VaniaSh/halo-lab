@@ -1,0 +1,35 @@
+.postsContainer {
+  display: flex;
+  width: 1120px;
+  height: 100px;
+  margin: 192px auto 0 auto;
+  gap: 104px;
+
+  .postsText {
+    width: 480px;
+
+    h1 {
+      font-size: 40px;
+      margin: 0;
+      margin-bottom: 40px;
+      padding: 0;
+    }
+
+    p {
+      width: 423px;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 71px;
+    }
+
+    .postsButton {
+      width: 166px;
+      text-transform: uppercase;
+      background-color: #F2726C;
+      color: white;
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+
+}

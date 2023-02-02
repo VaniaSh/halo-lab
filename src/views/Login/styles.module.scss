@@ -1,0 +1,48 @@
+.loginContainer {
+  margin: 124px auto 0 auto;
+  box-sizing: border-box;
+  width: 1120px;
+  height: 560px;
+  background-color: #FFBD9E;
+  border-radius: 20px;
+  padding: 104px 104px 104px 82.5px;
+
+  .loginContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loginText {
+      width: 50%;
+      text-align: center;
+      margin-right: 127.5px;
+    }
+
+    .loginForm {
+      width: 50%;
+      background-color: #F7F3F4;
+
+      .loginFormTitle {
+        margin-top: 40px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 56px;
+        text-align: center;
+
+      }
+
+      .loginFormContent {
+        width: 312px;
+        margin: 0 auto;
+
+        .loginFormButton {
+          margin-top: 32px;
+          background-color: #F2726C;
+          color: white;
+          margin-bottom: 55px;
+        }
+
+      }
+    }
+  }
+}

@@ -15,6 +15,7 @@ const GreetingView = () => {
                         <p>The scale of the challenges facing our planet can seem daunting, but we can all do
                             something.</p>
                         <TextInput
+                            isButton
                             placeholder={'Find the place to help'}
                         />
                     </div>

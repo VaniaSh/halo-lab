@@ -14,7 +14,10 @@ const Header = () => {
                     <Link href={'/'}>Places</Link>
                     <Link href={'/'}>Team</Link>
                 </div>
-                <Button>Apply</Button>
+                <div style={{width: '145px'}}>
+                    <Button>Apply</Button>
+
+                </div>
             </div>
             <div className={styles.divider}></div>
         </div>
