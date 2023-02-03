@@ -25,5 +25,5 @@ const Post: FC<PostProps> = ({title, description, isOpen}) => {
     );
 };
 
-export default Post;
+export {Post};
 // AiFillPlusCircle

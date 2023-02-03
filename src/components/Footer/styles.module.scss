@@ -1,0 +1,31 @@
+.footerContainer {
+  box-sizing: border-box;
+  background-color: #F7F3F4;
+  color: #333333;
+  width: 100%;
+  padding: 96px 183px 88px 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  .footerContacts {
+    .footerTitle {
+      font-size: 34px;
+      text-transform: uppercase;
+      line-height: 48px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+  }
+
+  .footerHeadquarters {
+    .footerSubTitle {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: 0.3px;
+      margin-bottom: 37px;
+    }
+  }
+
+}

@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 import styles from './styles.module.scss'
-import Post from "@/components/Post";
-import {is} from "immutable";
-import {Button} from "@/components";
+import {Button, Post} from "@/components";
 
 const Posts = () => {
     const [post, setPost] = useState([

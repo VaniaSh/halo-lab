@@ -1,0 +1,22 @@
+.slider{
+  background-color: #FFBD9E;
+  display: flex;
+  width: 160%;
+  justify-content: center;
+  //height: 35vh;
+  align-items: center;
+  margin-left: -30%;
+  box-sizing: border-box;
+  margin-top: 192px;
+
+}
+
+.sliderContent{
+  padding-top: 100px;
+  height: 555px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 5%;
+  grid-row-gap: 0px;
+}
