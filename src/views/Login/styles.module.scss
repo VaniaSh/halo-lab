@@ -1,11 +1,12 @@
 .loginContainer {
-  margin: 124px auto 0 auto;
   box-sizing: border-box;
-  width: 1120px;
+  margin: 0 auto;
+  max-width: 1120px;
   height: 560px;
   background-color: #FFBD9E;
   border-radius: 20px;
   padding: 104px 104px 104px 82.5px;
+
 
   .loginContent {
     display: flex;
@@ -13,13 +14,22 @@
     align-items: center;
 
     .loginText {
-      width: 50%;
-      text-align: center;
       margin-right: 127.5px;
+      text-align: start;
+      width: 384px;
+      opacity: 0.9;
+      h1{
+        margin-bottom: 40px;
+        color: #222433;
+      }
+      p{
+        color: #1E1A20;
+      }
     }
 
     .loginForm {
       width: 50%;
+      border-radius: 16px;
       background-color: #F7F3F4;
 
       .loginFormTitle {
@@ -28,6 +38,7 @@
         font-weight: 600;
         line-height: 56px;
         text-align: center;
+        color: #222433;
 
       }
 
@@ -42,6 +53,70 @@
           margin-bottom: 55px;
         }
 
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .loginContainer {
+    padding: 80px 30px;
+
+    .loginContent {
+      .loginText {
+        width: 40%;
+      }
+
+      .loginForm {
+        width: 60%;
+
+        .loginFormContent {
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .loginContainer {
+    padding: 42px 43px;
+    height: 680px;
+
+    .loginContent {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 55px;
+
+      .loginText {
+        width: 312px;
+        margin: 0 auto;
+        text-align: center;
+
+        h1 {
+          margin-bottom: 20px;
+        }
+
+        p {
+          line-height: 26px;
+          font-size: 15px;
+
+        }
+      }
+
+      .loginForm {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .loginContainer {
+    .loginContent {
+      .loginForm {
+        width: 100%;
       }
     }
   }

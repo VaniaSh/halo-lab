@@ -1,4 +1,9 @@
 .imagesContainer {
+  background: url("/Parrot.svg") no-repeat center;
+  object-fit: contain;
+  width: 458px;
+  height: 600px;
+
   margin-bottom: 79px;
   .parrot {
     position: absolute;
@@ -30,6 +35,38 @@
       line-height: 80px;
       margin: 0;
       font-weight: 800;
+    }
+  }
+}
+@media only screen and (max-width: 385px) {
+  .imagesContainer{
+    width: 303px;
+    height: 495px;
+    position: relative;
+    background-size: cover;
+    .parrot{
+      position: relative;
+      overflow: hidden !important;
+      width: 330px;
+      right: -100px;
+      margin-left: 100px;
+
+
+    }
+
+    .square{
+      position: relative;
+      width: 240px;
+      height: 285px;
+      margin-left: 100px;
+    }
+    .icon{
+      margin-left: 100px;
+
+    }
+    .members{
+      display: none;      margin-left: 100px;
+
     }
   }
 }

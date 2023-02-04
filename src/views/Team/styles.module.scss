@@ -9,6 +9,12 @@
 
     h1 {
       margin-bottom: 16px;
+      color: #222433;
+    }
+
+    p {
+      color: #1E1A20;
+      opacity: 0.9;
     }
   }
 
@@ -18,12 +24,11 @@
     width: 1120px;
     margin: 0 auto;
 
-    .img1 .img3 {
-      margin-top: 13px;
+    .img1 {
+      width: 100%;
+      object-fit: contain;
+
     }
 
-    .img2 {
-      margin-top: 117px;
-    }
   }
 }

@@ -11,4 +11,11 @@
   color: black;
   font-size: 16px;
   font-weight: 700;
+  cursor: pointer;
+  &:hover{
+    background-color: black;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all ease-in-out 400ms;
+  }
 }

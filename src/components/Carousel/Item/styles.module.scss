@@ -1,0 +1,43 @@
+.slideItemContainer {
+  //background: url("/slider/bg.png") no-repeat center;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .slideItemContent {
+    margin-top: 50%;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    .slideItemContainerImage {
+      position: relative;
+      background-size: contain;
+      object-fit: contain;
+      width: 276px;
+      height: 281px;
+      scale: 1;
+
+    }
+
+    h1 {
+      position: relative;
+      top: -40%;
+      color: white;
+    }
+
+    p {
+      position: relative;
+      z-index: -1;
+      top: -50%;
+      width: 281px;
+      margin: 0 auto;
+
+
+    }
+
+
+  }
+
+}
+

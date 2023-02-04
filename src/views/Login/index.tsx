@@ -19,8 +19,10 @@ const LoginView = () => {
                     <div>
                         <h1 className={styles.loginFormTitle}>Log In</h1>
                         <div className={styles.loginFormContent}>
-                            <TextInput height={48} placeholder={'Name'}/>
-                            <TextInput height={48} placeholder={'Email'}/>
+                            <TextInput onChange={() => {
+                            }} name={'name'} height={48} placeholder={'Name'}/>
+                            <TextInput email={true} onChange={() => {
+                            }} name={'email'} height={48} placeholder={'Email'}/>
                             <Button className={styles.loginFormButton}>Book a Demo</Button>
                         </div>
 

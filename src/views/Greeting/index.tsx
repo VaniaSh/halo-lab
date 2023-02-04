@@ -8,8 +8,8 @@ const GreetingView = () => {
     return (
         <div className={styles.greetingContainer}>
             <Header/>
-            <div className={styles.images}>
-                <div>
+            <div className={styles.greetingContent}>
+                <div className={styles.images}>
                     <Image className={styles.textImg} src={text} alt={'some text'}/>
                     <div className={styles.underImgContent}>
                         <p>The scale of the challenges facing our planet can seem daunting, but we can all do
@@ -17,7 +17,9 @@ const GreetingView = () => {
                         <TextInput
                             isButton
                             placeholder={'Find the place to help'}
-                        />
+                            name={'simple'}
+                            onChange={() => {
+                            }}/>
                     </div>
 
                 </div>

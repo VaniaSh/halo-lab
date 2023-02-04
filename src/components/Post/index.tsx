@@ -15,11 +15,11 @@ const Post: FC<PostProps> = ({title, description, isOpen}) => {
                     <AiFillPlusCircle onClick={() => setIsOpen(!open)} size={40} color={'#F2726C'}/>}
 
             </div>
-            {
+
                 <div className={`${styles.postDescription} ${open ? styles.postDescriptionOpen : ''}`}>
                     { description}
                 </div>
-            }
+
             <hr/>
         </div>
     );

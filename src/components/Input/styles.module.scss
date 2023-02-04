@@ -1,3 +1,16 @@
+@mixin underInput {
+  position: relative;
+  word-break: break-all;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 4px;
+  left: 16px;
+}
+
 .inputGroup {
   width: 100%;
   position: relative;
@@ -14,6 +27,9 @@
     line-height: 24px;
     letter-spacing: 1px;
     box-sizing: border-box;
+    &.error {
+      border: 1px solid #CB3D40;
+    }
 
   }
 
@@ -29,6 +45,10 @@
     color: white;
     width: auto;
     padding: 15px 32px;
+  }
+  .parError {
+    @include underInput;
+    color:#CB3D40;
   }
 }
 

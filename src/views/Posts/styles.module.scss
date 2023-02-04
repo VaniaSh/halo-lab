@@ -1,24 +1,28 @@
 .postsContainer {
   display: flex;
-  width: 1120px;
-  margin: 192px auto 0 auto;
+  max-width: 1120px;
+  width: 100%;
   gap: 104px;
+  justify-content: center;
+  align-items: center;
+  margin: 192px auto 0 auto;
 
   .postsText {
     width: 480px;
 
     h1 {
       font-size: 40px;
-      margin: 0;
-      margin-bottom: 40px;
+      margin: 0 0 40px 0;
       padding: 0;
+      color: #222433;
     }
 
     p {
       width: 423px;
       padding: 0;
-      margin: 0;
-      margin-bottom: 71px;
+      margin: 0 0 71px 0;
+      color: #1E1A20;
+      opacity: 0.9;
     }
 
     .postsButton {
@@ -31,4 +35,32 @@
     }
   }
 
+}
+
+
+@media only screen and (max-width: 1120px) {
+  .postsContainer {
+    gap: 0;
+  }
+}
+
+@media only screen and (max-width: 796px) {
+  .postsContainer {
+    width: 322px;
+
+    flex-direction: column;
+    .postsText {
+      width: 100%;
+      font-size: 28px;
+      line-height: 42px;
+      p{
+        width: 100%;
+      }
+
+    }
+    .postsButton{
+      margin-bottom: 63px ;
+
+    }
+  }
 }

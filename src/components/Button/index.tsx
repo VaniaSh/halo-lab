@@ -2,7 +2,7 @@ import React, {FC, useEffect, useState} from 'react';
 import {ButtonProps} from './type'
 import styles from './index.module.scss'
 
-const Button: FC<ButtonProps> = ({children, className}) => {
+const Button: FC<ButtonProps> = ({children, disabled, onClick, className}) => {
     const [btnStyles, setBtnStyle] = useState<string>('');
     useEffect(() => {
         setBtnStyle(
@@ -10,7 +10,11 @@ const Button: FC<ButtonProps> = ({children, className}) => {
         );
     }, []);
     return (
-        <button className={btnStyles}>
+        <button
+            disabled={disabled}
+            onClick={onClick}
+            className={btnStyles}
+        >
             {children}
         </button>
     );

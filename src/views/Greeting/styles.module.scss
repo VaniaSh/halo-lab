@@ -1,20 +1,102 @@
-.greetingContainer{
+.greetingContainer {
   background-color: #F7F3F4;
   width: 100%;
-  height: 1000px;
-  .images{
+  height: auto;
+
+  .greetingContent {
     display: flex;
-    padding-left: 160px;
-    padding-top: 128px;
-    gap: 113px;
     align-items: center;
-    .textImg{
-      margin-bottom: 59px;
+    justify-content: center;
+    gap: 160px;
+
+    .images {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+
+      .textImg {
+        width: 542px;
+        height: 292px;
+        margin-bottom: 59px;
+      }
+
+      .underImgContent {
+        width: 448px;
+
+        p {
+          margin-bottom: 48px;
+          font-size: 16px;
+          line-height: 32px;
+
+        }
+      }
     }
-    .underImgContent{
-      width: 448px;
-      p{
-        margin-bottom: 48px;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .greetingContainer {
+
+    .greetingContent {
+      gap: 40px;
+
+      .images {
+        .textImg {
+          margin: 0 auto;
+        }
+
+        .underImgContent {
+          margin: 0 auto;
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .greetingContainer {
+    .greetingContent {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      .images {
+        margin-top: 70px;
+
+        .underImgContent {
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+//
+@media only screen and (max-width: 385px) {
+  .greetingContainer {
+    .greetingContent {
+      gap: 40px;
+
+      .images {
+        .textImg {
+          width: 336px;
+          margin: 0 auto;
+        }
+
+        .underImgContent {
+          width: 339px;
+          margin: 0 auto;
+
+          p {
+            text-align: center;
+          }
+        }
       }
     }
   }
