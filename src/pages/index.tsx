@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <div>
             <GreetingView/>
-            {/*<TeamView/>*/}
+            <TeamView/>
             <LoginView/>
             <Posts/>
             <SliderRs/>

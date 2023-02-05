@@ -1,7 +1,7 @@
 .imagesContainer {
   background: url("/Parrot.svg") no-repeat center;
   object-fit: contain;
-  width: 458px;
+  min-width: 458px;
   height: 600px;
 
   margin-bottom: 79px;
@@ -37,36 +37,25 @@
       font-weight: 800;
     }
   }
-}
-@media only screen and (max-width: 385px) {
-  .imagesContainer{
-    width: 303px;
-    height: 495px;
+  @media only screen and (max-width: 690px) {
+    min-width: 330px;
+    object-fit: contain;
+    background-size: contain;
     position: relative;
-    background-size: cover;
-    .parrot{
-      position: relative;
-      overflow: hidden !important;
-      width: 330px;
-      right: -100px;
-      margin-left: 100px;
-
-
-    }
-
     .square{
-      position: relative;
-      width: 240px;
-      height: 285px;
-      margin-left: 100px;
-    }
-    .icon{
-      margin-left: 100px;
-
+      width: 70%;
+      object-fit: contain;
+      left: 0;
+      right: 0;
     }
     .members{
-      display: none;      margin-left: 100px;
-
+      left: 20px;
+      right: 0;
+    }
+    .icon{
+      top: 50px;
+      right: 220px;
     }
   }
 }
+

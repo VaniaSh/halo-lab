@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import styles from './styles.module.scss'
-import {Button, Post} from "@/components";
+import {MPost} from "@/components/Post";
+import {motion} from "framer-motion";
+import {PostAnim, TextAnim} from "@/helpers/animations";
+import {MButton} from "@/components/Button";
 
 const Posts = () => {
     const [post, setPost] = useState([
@@ -27,20 +30,26 @@ const Posts = () => {
     ])
 
     return (
-        <div className={styles.postsContainer}>
+        <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={{amount: .2, once: true}}
+            className={styles.postsContainer}>
             <div className={styles.postsText}>
-                <h1>Ready to Get started?</h1>
-                <p>When pattern is mentioned in interior design, it is easy to asso- ciate it with a geometric patterned
+                <motion.h1 variants={TextAnim}>Ready to Get started?</motion.h1>
+                <motion.p variants={TextAnim}>When pattern is mentioned in interior design, it is easy to asso- ciate it
+                    with a geometric patterned
                     wallpaper or colourful prints on interior fabrics.
-                </p>
-                <Button className={styles.postsButton}>Contact Us</Button>
+                </motion.p>
+                <MButton variants={TextAnim} className={styles.postsButton}>Contact Us</MButton>
             </div>
             <div className={styles.posts}>
-                {post.map(({title, description, id, isOpen}) => (
-                    <Post isOpen={isOpen} key={id} title={title} description={description}/>
+                {post.map(({title, description, id, isOpen}, index) => (
+                    <MPost variants={PostAnim} custom={index} isOpen={isOpen} key={id} title={title}
+                           description={description}/>
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 };
 

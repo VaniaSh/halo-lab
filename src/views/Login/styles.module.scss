@@ -55,6 +55,14 @@
 
       }
     }
+    .loginFormVectors{
+      position: relative;
+      top: -180px;
+      right: 20px;
+    }
+    .last{
+
+    }
   }
 }
 
@@ -108,6 +116,10 @@
       .loginForm {
         width: 50%;
       }
+      .loginFormVectors{
+        top: -450px;
+        left: 140px;
+      }
     }
   }
 }
@@ -118,6 +130,10 @@
       .loginForm {
         width: 100%;
       }
+      .loginFormVectors{
+        display: none;
+      }
     }
+
   }
 }
