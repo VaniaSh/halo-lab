@@ -8,13 +8,13 @@ import {SliderRs} from "@/components/Carousel";
 
 export default function Home() {
     return (
-        <div>
+        <>
             <GreetingView/>
             <TeamView/>
             <LoginView/>
             <Posts/>
             <SliderRs/>
             <Footer/>
-        </div>
+        </>
   )
 }

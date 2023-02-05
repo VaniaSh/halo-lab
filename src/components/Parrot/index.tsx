@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from "next/image";
 import styles from './index.module.scss'
-import parrot from '../../../public/Parrot.svg'
 import square from '../../../public/squre.png'
 import iconInSquare from '../../../public/iconInSqu.png'
 
@@ -12,7 +11,7 @@ const Parrot = () => {
             <Image className={styles.icon} alt={'icon'} src={iconInSquare}/>
             <div className={styles.members}>
                 Members
-                <p>29999</p>
+                <p>29128</p>
             </div>
         </div>
     );

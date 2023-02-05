@@ -7,6 +7,7 @@ import {TextAnim} from "@/helpers/animations";
 const TeamView = () => {
     return (
         <motion.div
+            id='team'
             initial='hidden'
             whileInView='visible'
             className={styles.teamContainer}>

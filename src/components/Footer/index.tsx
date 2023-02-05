@@ -17,13 +17,13 @@ const Footer = () => {
             <div className={styles.footerHeadquarters} style={{gridArea: 'c'}}>
                 <h1 className={styles.footerSubTitle}>Social media</h1>
                 <div>
-                    <Link href={'https://github.com/VaniaSh/'}>
+                    <Link href={'https:/github.com/VaniaSh/'}>
                         <AiFillGithub color={'#333333'} size={32}/>
                     </Link>
-                    <Link href={'/https://www.linkedin.com/in/vania-shepetko-255144214/'}>
+                    <Link href={'https:/www.linkedin.com/in/vania-shepetko-255144214/'}>
                         <AiFillLinkedin color={'#333333'} size={32}/>
                     </Link>
-                    <Link href={'/https://twitter.com/'}>
+                    <Link href={'https:/twitter.com/'}>
                         <AiFillTwitterCircle color={'#333333'} size={32}/>
                     </Link>
 

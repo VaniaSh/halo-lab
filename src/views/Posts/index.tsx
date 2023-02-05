@@ -31,6 +31,7 @@ const Posts = () => {
 
     return (
         <motion.div
+            id={"our_missions"}
             initial='hidden'
             whileInView='visible'
             viewport={{amount: .2, once: true}}

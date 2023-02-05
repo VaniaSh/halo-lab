@@ -2,8 +2,7 @@ import React from 'react';
 import styles from './styles.module.scss'
 import Image from "next/image";
 
-const Item = ({imageSrc, clicker, className, title, desc, alt}: any) => {
-    console.log(clicker,  'text >> ', title)
+const Item = ({imageSrc, title, alt}: any) => {
     return (
         <div className={`${styles.slideItemContainer}`}>
             <div

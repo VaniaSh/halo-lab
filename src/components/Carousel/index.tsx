@@ -52,7 +52,7 @@ const SliderRs = () => {
     }
     console.log(currentItem)
     return (
-        <div style={{ marginTop: 192, height: '655px', backgroundColor: '#FFBD9E'}}>
+        <div id='places' style={{ marginTop: 192, height: '655px', backgroundColor: '#FFBD9E'}}>
             {/*// @ts-ignore*/}
             <Carousel autoTabIndexVisiblItems
                       onNextEnd={onCurrentChange}
