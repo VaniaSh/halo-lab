@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styles from './styles.module.scss'
 import {Button, Logo} from "@/components";
-import {RiMenu3Fill} from "react-icons/Ri";
+import {RiMenu3Fill} from "react-icons/ri";
 import Link from "next/link";
 
 const Header = () => {
