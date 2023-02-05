@@ -1,3 +1,4 @@
+@import "src/styles/variables";
 .teamContainer {
   background: url("/horizontal.png") no-repeat center;
   width: 100%;
@@ -12,11 +13,11 @@
 
     h1 {
       margin-bottom: 16px;
-      color: #222433;
+      color: $bigTitleColor;
     }
 
     p {
-      color: #1E1A20;
+      color: $paragraphColor;
       opacity: 0.9;
     }
   }

@@ -1,3 +1,5 @@
+@import "src/styles/variables";
+
 .headerContainer {
   width: 100%;
   display: flex;
@@ -36,7 +38,7 @@
     width: 80%;
     height: 2px;
     margin: 0 auto;
-    background-color: #222433;
+    background-color: $bigTitleColor;
   }
 
   .BurgerContainer {
@@ -63,6 +65,10 @@
 
       a {
         text-decoration: none;
+        color: black;
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
 

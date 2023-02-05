@@ -1,9 +1,11 @@
+@import "src/styles/variables";
+
 .loginContainer {
   box-sizing: border-box;
   margin: 0 auto 192px auto;
   max-width: 1120px;
   height: 560px;
-  background-color: #FFBD9E;
+  background-color: $boxColor ;
   border-radius: 20px;
   padding: 104px 104px 104px 82.5px;
 
@@ -20,10 +22,10 @@
       opacity: 0.9;
       h1{
         margin-bottom: 40px;
-        color: #222433;
+        color: $bigTitleColor;
       }
       p{
-        color: #1E1A20;
+        color: $paragraphColor;
       }
     }
 
@@ -38,7 +40,7 @@
         font-weight: 600;
         line-height: 56px;
         text-align: center;
-        color: #222433;
+        color: $bigTitleColor;
 
       }
 
@@ -48,7 +50,7 @@
 
         .loginFormButton {
           margin-top: 32px;
-          background-color: #F2726C;
+          background-color: $buttonColor;
           color: white;
           margin-bottom: 55px;
         }

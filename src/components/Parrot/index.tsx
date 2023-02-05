@@ -11,7 +11,7 @@ const Parrot = () => {
             <Image className={styles.icon} alt={'icon'} src={iconInSquare}/>
             <div className={styles.members}>
                 Members
-                <p>29128</p>
+                <p>29 128</p>
             </div>
         </div>
     );

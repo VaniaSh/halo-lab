@@ -1,3 +1,6 @@
+@import "src/styles/variables";
+
+
 @mixin underInput {
   position: relative;
   word-break: break-all;
@@ -28,7 +31,7 @@
     letter-spacing: 1px;
     box-sizing: border-box;
     &.error {
-      border: 1px solid #CB3D40;
+      border: 1px solid $errorColor;
     }
 
   }
@@ -41,14 +44,14 @@
     top: 0;
     margin: 8px;
 
-    background-color: #F2726C;
+    background-color: $buttonColor;
     color: white;
     width: auto;
     padding: 15px 32px;
   }
   .parError {
     @include underInput;
-    color:#CB3D40;
+    color: $errorColor;
   }
 }
 

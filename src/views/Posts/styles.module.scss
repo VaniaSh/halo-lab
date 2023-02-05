@@ -1,3 +1,5 @@
+@import "src/styles/variables";
+
 .postsContainer {
   display: flex;
   max-width: 1120px;
@@ -14,21 +16,21 @@
       font-size: 40px;
       margin: 0 0 40px 0;
       padding: 0;
-      color: #222433;
+      color: $bigTitleColor;
     }
 
     p {
       width: 423px;
       padding: 0;
       margin: 0 0 71px 0;
-      color: #1E1A20;
+      color: $paragraphColor;
       opacity: 0.9;
     }
 
     .postsButton {
       width: 166px;
       text-transform: uppercase;
-      background-color: #F2726C;
+      background-color: $buttonColor;
       color: white;
       font-size: 13px;
       line-height: 18px;

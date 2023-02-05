@@ -1,3 +1,5 @@
+@import "src/styles/variables";
+
 .postContainer {
   width: 536px;
 
@@ -14,7 +16,7 @@
       font-size: 24px;
       line-height: 34px;
       font-weight: 600;
-      color: #1E1A20;
+      color: $paragraphColor;
 
     }
 
@@ -27,7 +29,7 @@
     font-weight: 400;
     margin: 0;
     padding: 0;
-    color: #1E1A20;
+    color: $paragraphColor;
     transition: all ease-out .7s;
     //transition-delay: 1s;
     height: 0;
